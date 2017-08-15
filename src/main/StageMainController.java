@@ -96,34 +96,22 @@ public class StageMainController
     //endregion
 
     //region Create message box
-    public Alert errorAlert()
+    public void errorAlert()
     {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Error");
         alert.setHeaderText("Invalid number entered.");
         alert.setContentText("Try again!");
         alert.showAndWait();
-        return alert;
     }
 
-    public Alert finishedAlert()
+    public void finishedAlert()
     {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information");
         alert.setHeaderText("Finished writing file.");
         alert.setContentText("Placed in project directory.");
         alert.showAndWait();
-        return alert;
-    }
-
-    public Alert noItemsInListAlert()
-    {
-        Alert alert = new Alert(Alert.AlertType.NONE);
-        alert.setTitle("Information");
-        alert.setHeaderText("There are no items in the ObservableList<>");
-        alert.setContentText("Generate or import data.");
-        alert.showAndWait();
-        return alert;
     }
     //endregion
 
